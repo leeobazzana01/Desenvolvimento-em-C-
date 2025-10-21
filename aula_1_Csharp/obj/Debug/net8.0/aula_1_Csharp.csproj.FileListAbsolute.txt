@@ -12,3 +12,4 @@
 /home/leozin/ciencia_computacao/seminariosIII/desenvolvimento_c#/aula_1_Csharp/obj/Debug/net8.0/aula_1_Csharp.pdb
 /home/leozin/ciencia_computacao/seminariosIII/desenvolvimento_c#/aula_1_Csharp/obj/Debug/net8.0/aula_1_Csharp.genruntimeconfig.cache
 /home/leozin/ciencia_computacao/seminariosIII/desenvolvimento_c#/aula_1_Csharp/obj/Debug/net8.0/ref/aula_1_Csharp.dll
+/home/leozin/ciencia_computacao/seminariosIII/desenvolvimento_c#/aula_1_Csharp/obj/Debug/net8.0/aula_1_Csharp.sourcelink.json
