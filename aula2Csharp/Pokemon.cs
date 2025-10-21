@@ -15,24 +15,27 @@ namespace exercicioPokemonPOO
         public string Tipo { get; set; }
 
         public int Ataca { get; set; }
+
+        public int Level { get; set; }
         public int Captura { get; set; }
 
         //construtor para criar um objeto hamburguer
-        public Pokemon(string nome, string tipo, int ataca, int captura)
+        public Pokemon(string nome, string tipo, int level, int ataca, int captura)
         {
             this.Nome = nome;
             this.Tipo = tipo;
+            this.Level = level;
             this.Ataca = ataca;
             this.Captura = captura;
         }
 
         //métodos do Pokemon
-        public void preparaChapa(int graus)
+        public void aparecerSelvagem(string nome, string tipo, int level)
         {
-            Console.WriteLine($"Chapa preparada a {graus} graus");
+        Console.WriteLine($"O Pokemon {nome} do Tipo {tipo} Apareceu!{nome} tem Level {level});
         }
 
-        public void selaPao()
+        public void capturaPokemon()
         {
             Console.WriteLine("Pão Selado");
         }
