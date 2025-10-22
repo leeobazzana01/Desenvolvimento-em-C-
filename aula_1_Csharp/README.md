@@ -18,7 +18,7 @@ Ele possui divisão em Ecossistemas .NET, sendo as principais:
 
 ### Introdução a API
 
-A API (Aplication Program Interface), basicamente é um sistema que permite a comuniacação entre a API e o FrontEnd e o Backend. É como se fosse o Garçom de um Restaurante, pois leva o cardápio, atende o cliente (front), leva o pedido à cozinha (requisição) e retorna levando um prato ao cliente. Além de permitir a comunicação entre o Front e o Back, uma API também permite a comunicação entre serviços internos, por exemplo o Mercado Livre tem cerca de 70 API's, cada uma delas para um serviço, que se comunicam entre si.
+A API (Aplication Program Interface), basicamente é um sistema que permite a comuniacação entre a API, o FrontEnd e o Backend. É como se fosse o Garçom de um Restaurante, pois leva o cardápio, atende o cliente (front), leva o pedido à cozinha (requisição) e retorna levando um prato ao cliente. Além de permitir a comunicação entre o Front e o Back, uma API também permite a comunicação entre serviços internos, por exemplo o Mercado Livre tem cerca de 70 API's, cada uma delas para um serviço, que se comunicam entre si.
 
 No exemplo do Bruno, que trabalha com validação de cartões, a verificação é em 2 etapas:
 
@@ -43,20 +43,21 @@ Desvantagens de XML:
 1. Verbosidade: escrito em Tags, dificultando a identificação de erros e bugs. Um erro na escrita de código pode quebrar toda a nota
 
 ## Orientação a Objetos
-É o principal paradigma do: 
+É o principal paradigma do C#.
 
-Definido em: Objetos (resultados), atributos (características) e métodos (ação).
+É composto por: Objetos (resultados),  Atributos(características), Construtor(para criar um objeto) e Métodos(ação).
 
 Os objetos são **equivalentes** a uma **struct**, na Struct nós alocamos dados na stack que é ótimo para acessar os dados porém com pouca duração na memória, porém a classe aloca na Heap (fica em memória por mais tempo).  
 
 ### **Classes**
 
-Definição da **estrutura** de algo, de algum dado. 
-Por exemplo, uma classe casa irá conter quartos, banheiro, cozinha, sala, telhado, chão.
+A principal diferença entre Classe e Objetos é que a classe **define o modelo daquele dado, como iremos estruturá-lo**. O objeto é **tipo de dado fruto naquele modelo**.
+
+No exemplo abaixo, a classe Biscoito é criada. Objetos seriam por exemplo, biscoitoPolvilho (com a receita do biscoito), biscoito chocolate, entre outros vários que poderíamos criar usando como "molde" essa classe "Biscoito" que criamos. 
 
 ```C#
 //classse que representa receira
-class ReceitaBiscoito{
+class Biscoito{
     //atributos (características)
     public int Farinha { get; set; }
     public int Acucar { get; set; }
@@ -64,16 +65,16 @@ class ReceitaBiscoito{
 
     //construtor (o que cria as receitas de bolo)
     //o construtor pode ser vazio 
-    public ReceitaBiscoito(int farinha, int acucar, int ovos){
-        Farinha = farinha;
-        Acucar = acucar;
-        Ovos = ovos;
+    public biscoito(int farinha, int acucar, int ovos){
+        this.Farinha = farinha;
+        this.Acucar = acucar;
+        this.Ovos = ovos;
     }
 }
 ```
 
 ### Atributos
-São as características, os ingreditentes que iremos utilizar na receita, por exemplo
+São as características, os ingreditentes que iremos utilizar na receita, na Classe acima, por exemplo, os atributos definidos foram int Farinha, Acucar, Ovos.
 
 ### Métodos
 Ações que as classes fazem, por exemplo no caso da receita, preparar massa, moldar biscoitos, assar biscoitos, etc...
